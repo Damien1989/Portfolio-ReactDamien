@@ -11,7 +11,7 @@ const AnekTelugu = Anek_Telugu({
 
 export const metadata: Metadata = {
   title: "Damien Diaz . Sofware Engineer",
-  description: "Online creator and educator about React, Tailwind and Symfony",
+  description: "Online creator and educator about React, Tailwind and Symfony.",
 };
 
 export default function RootLayout({
