@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Section } from "./Section";
 import  Link  from "next/link";
-import { Home, Code, LucideIcon, Rss, StickyNote, Bus, Store, PlaneTakeoff } from "lucide-react";
+import { Home, Code, LucideIcon, Rss, StickyNote, Bus, Store, PlaneTakeoff, ArrowUpRight } from "lucide-react";
 import { url } from "inspector";
 
 export const Status = () => {
@@ -38,15 +38,49 @@ export const Status = () => {
             url={work.url}
             />
         ))}
-
         </div>
 
-
     </Card>
-    <Card className="p-4 flex-1"> Contactez-moi </Card>
+    <Card className="p-4 flex-1">
+    <p className="text-lg text-muted-foreground">Contactez-moi</p>
+    <ContactCard name="Damien Diaz" 
+    image="/images/damien2.jpeg" 
+    mediumImage="" 
+    description="16" 
+    />
+
+
+         </Card>
 </div>
 </Section>
     );
+};
+
+const ContactCard = (props: {
+    image: string;
+    mediumImage: string;
+    name: string;
+    description: string;
+}) => {
+return (
+    <Card className="p-3 bg-accent/10 flex items-center gap-4">
+<div>
+    <img src={props.image} alt={props.name} className="w-10 h-10 rounded-full object-contain"/>
+    <img src={props.mediumImage}
+    alt={props.name}
+    className="w-4 h-4 absolute -bottom-1 -right-1 rounded-full object-contain" />
+</div>
+<div className="mr-auto">
+    <div className="flex items-center gap-2">
+<p className="text-lg font-semibold">{props.name}</p>
+    </div>
+
+<p className="text-xs text-muted-foreground">{props.image}</p>
+</div>
+<ArrowUpRight className="group-hover: translate-x-2"size={16}></ArrowUpRight>
+    </Card>
+    
+)
 };
 
 const SIDE_PROJECTS = [
@@ -114,21 +148,23 @@ type WorkProps = {
     role: string;
     date: string;
     url: string;
+    freelance?: boolean;
 };
 
 const Work = (props: WorkProps) => { 
     return (
-        <Link href={props.url} 
+        <Link
+        href={props.url} 
         className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded"
         >
             
-                <img 
-                src={props.image} 
-                alt={props.title} 
-                className="w-10 h-10 object-contain rounded-md"
-                 />
+        <img 
+            src={props.image} 
+            alt={props.title} 
+            className="w-10 h-10 object-contain rounded-md"
+            />
            
-            <div>
+            <div className="mr-auto">
             <p className="text-lg font-semibold">{props.title}</p>
             <p className="text-sm text-muted-foreground">{props.role}</p>
             </div>
@@ -136,6 +172,5 @@ const Work = (props: WorkProps) => {
             <p className="text-sm text-muted-foreground">{props.date}</p>
             </div>
             </Link>
-        
     );
 };
