@@ -9,24 +9,24 @@ import { LinkedinIcon } from "./icons/LinkedinIcon";
 export const Header = () => {
     return (
         <header className="sticky top-0 py-4">
-            <Section className="flex items-baseline">
-                <h1 className="text-lg font-bold text-primary">Damien.com
+            <Section className="d-flex align-items-center justify-content-between">
+                <h1 className="text-lg font-bold text-primary flex-grow-1">Damien.com
                 </h1>
-                <div className="flex-1" />
-                <ul className="flex items-center gap-2">
+                <ul className="list-unstyled m-0 flex items-center gap-2">
+                <li className="ml-auto">
                     <Link 
                     href="https://github.com/Damien1989"
                     className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0")}
                     >
-                        <GithubIcon size={19} className="text-foreground" />
+                        <GithubIcon size={16} className="text-foreground" />
                     </Link>
+                    </li>
                     <Link 
                     href="https://www.linkedin.com/in/damien-diaz-2453781b2/"
                     className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0")}
                     >
-                        <LinkedinIcon size={19} className="text-foreground" />
+                        <LinkedinIcon size={16} className="text-foreground" />
                     </Link>
-
                 </ul>
             </Section>
         </header>
