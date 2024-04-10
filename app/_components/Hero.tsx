@@ -1,8 +1,6 @@
 import { ComponentPropsWithoutRef } from "react";
 import { Section } from "./Section";
 import { cn } from "@/lib/utils";
-import { UdemyLogo } from "./icons/UdemyLogo";
-import { ReactLogo } from "./icons/ReactLogo";
 
 const Code = ({className,... props}: ComponentPropsWithoutRef<"span">) => {
     return (
