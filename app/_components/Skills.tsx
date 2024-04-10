@@ -9,8 +9,8 @@ import { SymfonyLogo } from "./icons/SymfonyLogo";
 export const Skills = () => {
     return <Section className="flex flex-col items-start gap-4">
         <Badge variant={"outline"}>Skills</Badge>
-    <h2 className="pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-        J'aime travailler sur...
+    <h2 className="pb-2 text-3xl mt-4 font-semibold tracking-tight first:mt-0">
+        J'aime travailler sur ...
         </h2>
               <div className="flex flex-col gap-2 flex-1">
                 <ReactLogo size={42} 
@@ -27,7 +27,7 @@ export const Skills = () => {
                 <OpenAILogo size={42} 
                  />
               <h3 className="text-2xl font-semibold tracking-tight">Open AI</h3>
-              <p className="text-sm text-muted-foreground">J'aime travailler sur <Code>Chat GPT</Code> afin d'intégrer l'AI dans des projets et je consulte les ressources sur <Code>Futurepedia</Code>
+              <p className="text-sm text-muted-foreground"><Code>Chat GPT</Code> est mon outil de travail favori en matière d'IA. Je consulte les nouveautés sur <Code>Futurepedia</Code> .
               </p>
           </div>
           </div>
@@ -37,7 +37,7 @@ export const Skills = () => {
                 <SymfonyLogo size={42} 
                   />
               <h3 className="text-2xl font-semibold tracking-tight">Symfony</h3>
-              <p className="text-sm text-muted-foreground">J'ai déjà réalisé des projet e-commerce avec Symfony version <Code>5.4</Code>
+              <p className="text-sm text-muted-foreground">J'ai déjà réalisé des projet e-commerce avec Symfony version <Code>5.4</Code> .
               </p>
           </div>
           </div>
