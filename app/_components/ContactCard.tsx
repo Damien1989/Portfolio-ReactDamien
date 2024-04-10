@@ -7,6 +7,7 @@ export const ContactCard = (props: {
     mediumImage: string;
     name: string;
     description: string;
+    url: string;
 }) => {
 return (
     <Link href={props.url}>
