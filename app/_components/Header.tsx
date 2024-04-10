@@ -10,7 +10,7 @@ export const Header = () => {
     return (
         <header className="sticky top-0 py-4">
             <Section className="d-flex align-items-center justify-content-between">
-                <h1 className="text-lg font-bold text-primary flex-grow-1">Damien.com
+                <h1 className="text-lg font-bold text-primary flex-grow-1">Mon portfolio
                 </h1>
                 <ul className="list-unstyled m-0 flex items-center gap-2">
                 <li className="ml-auto">

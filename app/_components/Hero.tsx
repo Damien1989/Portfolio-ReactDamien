@@ -21,7 +21,7 @@ export const Hero = () => {
         J'aime créer du contenu. Je suis des cours en ligne sur {" "}
     
         <Code className="inline-flex items-center gap-1">
-           <UdemyLogo size={16} className="inline" /> Udemy
+        Udemy
         </Code>
         {" "} afin de m'améliorer. <br /> Je vis à {" "}
         <Code className="inline-flex items-center gap-1">

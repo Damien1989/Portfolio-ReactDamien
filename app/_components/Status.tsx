@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Section } from "./Section";
 import  Link  from "next/link";
 import { LucideIcon, Bus, Store, PlaneTakeoff, ArrowUpRight } from "lucide-react";
+import { url } from "inspector";
 
 export const Status = () => {
     return (
@@ -16,7 +17,7 @@ export const Status = () => {
             Logo={project.Logo}
             title={project.title}
             description={project.description}
-            url="/"
+            url=""
             />
         ))}
     </div>
@@ -24,7 +25,7 @@ export const Status = () => {
     </Card>
             </div>
     <div className="flex-[2] w-full flex flex-col gap-4">
-    <Card className="p-4 flex-1">
+    <Card className="p-4 flex-1 flex-col gap-2">
     <p className="text-lg text-muted-foreground">Work</p>
         <div className="flex flex-col gap-4">
         {WORKS.map((work, index) => (
@@ -83,6 +84,7 @@ const SIDE_PROJECTS = [
     Logo: Bus,
     title:"Fullbus",
     description: "Réservez votre bus à travers la France.",
+    url:"http://127.0.0.1:8000/",
     },
     {
     Logo: Store,
@@ -92,7 +94,8 @@ const SIDE_PROJECTS = [
     {
     Logo: PlaneTakeoff,
     title:"Flight",
-    description: "Mon projet super sympa",
+    description: "Consultez vos horaires de vol.",
+    url:"https://damien1989.github.io/flight/",
     },
 ]
 
@@ -129,7 +132,7 @@ const WORKS = [
     {
     image: "https://media.licdn.com/dms/image/C4E0BAQGaOkmC-Y-i8g/company-logo_100_100/0/1630625409845/web_design_marchand_logo?e=1720656000&v=beta&t=EWM-zTI4B768XuBB7Vzd14RRgKqzbJzD1r5N0F6EaQQ",
     title: "Web Design Marchand",
-    role: "Développeur back-end en alternance",
+    role: "Développeur Back-end en alternance",
     date: "Février - juillet 2023",
     url: "https://web-design-marchand.fr",
     },
