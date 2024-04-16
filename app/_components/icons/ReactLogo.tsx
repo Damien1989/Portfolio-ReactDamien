@@ -3,7 +3,7 @@ import { ComponentPropsWithoutRef } from "react";
 export const ReactLogo = (props: ComponentPropsWithoutRef<"svg"> & {size?: number}) => {
     return (
 <svg width={props.size}
- height="20px"
+ height="50%"
   viewBox="0 0 256 228"
    version="1.1"  
    preserveAspectRatio="xMidYMid"

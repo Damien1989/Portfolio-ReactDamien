@@ -3,7 +3,7 @@ import { ComponentPropsWithoutRef } from "react";
 export const SymfonyLogo = (props: ComponentPropsWithoutRef<"svg"> & {size?: number}) => {
     return (
         <svg width={props.size}
-        height="18px" 
+        height="50%" 
         viewBox="0 0 256 257" 
         version="1.1" 
         preserveAspectRatio="xMidYMid"
