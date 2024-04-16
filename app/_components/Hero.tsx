@@ -11,8 +11,8 @@ const Code = ({className,... props}: ComponentPropsWithoutRef<"span">) => {
 };
 
 export const Hero = () => {
-    return <Section className="flex max-md:flex-col items-start gap-4">
-<div className="flex-[3] flex flex-col gap-2">
+    return <Section className="flex max-md:flex-row items-start gap-4 justify-between">
+<div className="flex-1">
     <h2 className="font-caption font-bold text-5xl text-primary">Damien Diaz</h2>
     <h3 className="text-3xl font-caption">Développeur web junior</h3>
     <p className="text-base">
@@ -21,17 +21,17 @@ export const Hero = () => {
         <Code className="inline-flex items-center gap-1">
         Udemy
         </Code>
-        {" "} afin de m'améliorer. <br /> Je vis à {" "}
+        {" "} afin <br /> de m'améliorer. Je vis à {" "}
         <Code className="inline-flex items-center gap-1">
             <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%29.svg" style={{width: 16, height: "auto"}} alt="France drapeau" />Lille
         </Code>.
     </p>
 </div>
-<div className="flex-2 max-md:m-auto ml-auto">
+<div className="flex-1 flex justify-center md:justify-end">
 <img src="/images/damien2.jpeg"
-    className="w-full rounded-full ml-auto h-auto max-w-xs max-md:w-56"
+    className="w-full rounded-full ml-auto h-auto max-w-xs max-md:w-56 ml-auto"
     alt="photo Damien"
-    ></img>
+    />
 </div>
     </Section>
 }
