@@ -66,6 +66,7 @@ const ContactCard = (props: {
     url: string;
 }) => {
 return (
+    <Link href={props.url}>
     <Card className="p-3 bg-accent/10 hover:bg-accent/30 transition-colors flex items-center gap-4">
 <div className="relative">
     <img src={props.image} alt={props.name} className="w-10 h-10 rounded-full object-contain"/>
@@ -80,6 +81,7 @@ return (
 </div>
 <ArrowUpRight className="group-hover: translate-x-2 mr-4 group-hover:translate-y-2 transition-transform"size={16}></ArrowUpRight>
     </Card>
+    </Link>
 )
 };
 
