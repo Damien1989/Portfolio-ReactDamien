@@ -1,8 +1,8 @@
 import { Card } from "@/components/ui/card";
 import { Section } from "./Section";
 import  Link  from "next/link";
-import { LucideIcon, Bus, Store, PlaneTakeoff, ArrowUpRight } from "lucide-react";
-import { url } from "inspector";
+import { LucideIcon, Bus, Store, PlaneTakeoff, ArrowUpRight, UtensilsCrossed } from "lucide-react";
+
 
 
 export const Status = () => {
@@ -18,7 +18,7 @@ export const Status = () => {
             Logo={project.Logo}
             title={project.title}
             description={project.description}
-            url=""
+            url={project.url}
             />
         ))}
     </div>
@@ -85,15 +85,16 @@ return (
 
 const SIDE_PROJECTS = [
     {
-    Logo: Bus,
-    title:"Fullbus",
-    description: "Réservez votre bus à travers la France.",
-    url:"http://127.0.0.1:8000/",
+    Logo: UtensilsCrossed,
+    title:"Com D Roy",
+    description: "Mangez les meilleurs plats du bassin d'Arcachon",
+    url:"https://github.com/Damien1989/com-d-roy-restaurant-symfony",
     },
     {
     Logo: Store,
     title:"DamShop",
     description: "Venez découvrir des produits rétros en tout genre !",
+    url:"https://github.com/Damien1989/symfony-alternance",
     },
     {
     Logo: PlaneTakeoff,
@@ -112,7 +113,8 @@ type SideProjectProps = {
 
 const SideProject = (props: SideProjectProps) => { 
     return (
-        <Link href={props.url} className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded">
+        <Link href={props.url} 
+        className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded">
         
             <span className="bg-accent text-accent-foreground p-4 rounded-sm">
                 <props.Logo size={32} />
@@ -155,8 +157,7 @@ const Work = (props: WorkProps) => {
     return (
         <Link
         href={props.url} 
-        className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-2 rounded"
-        >
+        className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-2 rounded">
             
         <img 
             src={props.image} 
