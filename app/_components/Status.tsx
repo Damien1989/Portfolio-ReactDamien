@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Section } from "./Section";
 import  Link  from "next/link";
-import { LucideIcon, Bus, Store, PlaneTakeoff, ArrowUpRight, UtensilsCrossed } from "lucide-react";
+import { LucideIcon, Store, PlaneTakeoff, ArrowUpRight, UtensilsCrossed } from "lucide-react";
 
 
 

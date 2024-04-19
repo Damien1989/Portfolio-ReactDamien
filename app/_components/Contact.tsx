@@ -5,11 +5,11 @@ import { ContactCard } from "./ContactCard";
 export const Contact = () => {
     return <Section className="flex flex-col items-start gap-4">
         <Badge variant={"outline"}>Contactez-moi !</Badge>
-    <h2 className="pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+    <h2 className="pb-2 text-3xl font-semibold tracking-tight first:mt-0 mb-4">
         Je serai très heureux d'échanger avec vous.
         </h2>
               <div className="flex flex-col w-full gap-4 flex-1">
-
+                
             <ContactCard
               url=""
               name="06.73.27.32.93" 

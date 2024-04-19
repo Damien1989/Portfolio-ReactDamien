@@ -18,7 +18,7 @@ return (
 </div>
 <div className="mr-auto">
     <div className="flex items-center gap-2">
-    <p className="text-lg font-semibold">{props.name}</p>
+    <p className="text-xs font-semibold">{props.name}</p>
     </div>
 
 <p className="text-xs text-muted-foreground">{props.description}</p>

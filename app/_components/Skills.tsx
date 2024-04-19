@@ -9,7 +9,7 @@ import { SymfonyLogo } from "./icons/SymfonyLogo";
 export const Skills = () => {
     return <Section className="flex flex-col items-start gap-4">
         <Badge variant={"outline"}>Skills</Badge>
-    <h2 className="pb-2 text-3xl mt-4 font-semibold tracking-tight first:mt-0">
+    <h2 className="pb-2 text-3xl mt-4 font-semibold tracking-tight first:mt-0 mb-4">
         J'aime travailler sur ...
         </h2>
               <div className="flex flex-col gap-2 flex-1">
