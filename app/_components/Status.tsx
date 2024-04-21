@@ -1,7 +1,8 @@
 import { Card } from "@/components/ui/card";
 import { Section } from "./Section";
 import  Link  from "next/link";
-import { LucideIcon, Store, PlaneTakeoff, ArrowUpRight, UtensilsCrossed } from "lucide-react";
+import { LucideIcon, Store, PlaneTakeoff, ArrowUpRight, UtensilsCrossed, Gamepad2 } from "lucide-react";
+import { url } from "inspector";
 
 
 
@@ -103,6 +104,12 @@ const SIDE_PROJECTS = [
     title:"Flight",
     description: "Consultez vos horaires de vol.",
     url:"https://damien1989.github.io/flight/",
+    },
+    {
+    Logo: Gamepad2,
+    title:"Pokémon API",
+    description:"Retrouvez vos Pokémons préféres.",
+    url:"https://damien1989.github.io/PokemonAPI/"
     },
 ]
 
