@@ -29,7 +29,6 @@ return (
 )
 };
 
-
 type SideProjectProps = {
     Logo: LucideIcon;
     title: string;

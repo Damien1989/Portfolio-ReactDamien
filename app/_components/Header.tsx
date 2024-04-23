@@ -5,7 +5,6 @@ import Link from "next/link";
 import { GithubIcon } from "./icons/GithubIcon";
 import { LinkedinIcon } from "./icons/LinkedinIcon";
 
-
 export const Header = () => {
    return (
         <header className="sticky top-0 py-4">

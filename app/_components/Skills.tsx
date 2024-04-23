@@ -5,7 +5,6 @@ import { Code } from "./Code";
 import { OpenAILogo } from "./icons/OpenAILogo";
 import { SymfonyLogo } from "./icons/SymfonyLogo";
 
-
 export const Skills = () => {
     return <Section className="flex flex-col items-start gap-5">
         <Badge variant={"outline"}>Skills</Badge>

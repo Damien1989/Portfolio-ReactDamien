@@ -2,9 +2,6 @@ import { Card } from "@/components/ui/card";
 import { Section } from "./Section";
 import  Link  from "next/link";
 import { LucideIcon, Store, PlaneTakeoff, ArrowUpRight, UtensilsCrossed, Gamepad2 } from "lucide-react";
-import { url } from "inspector";
-
-
 
 export const Status = () => {
     return (
