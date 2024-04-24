@@ -27,9 +27,9 @@ export const Hero = () => {
         </Code>.
     </p>
 </div>
-<div className="flex-1 flex justify-center md:justify-end">
-<img src="/images/damien2.jpeg"
-    className="w-full rounded-full ml-auto h-auto max-w-xs max-md:w-56 ml-auto"
+<div className="flex-1 flex justify-center items-center">
+<img src="/images/damien2.jpeg" 
+     className="rounded-full max-w-xs md:max-w-md mt-4"
     alt="photo Damien"
     />
 </div>
