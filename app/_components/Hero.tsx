@@ -2,6 +2,7 @@ import { ComponentPropsWithoutRef } from "react";
 import { Section } from "./Section";
 import { cn } from "@/lib/utils";
 
+
 const Code = ({className,... props}: ComponentPropsWithoutRef<"span">) => {
     return (
     <span className={cn("bg-accent/30 font-mono border hover:bg-accent/50 transition-colors border-accent p-1 text-primary rounded-sm",className)}
@@ -25,6 +26,15 @@ export const Hero = () => {
         <Code className="inline-flex items-center gap-1">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Ensign_of_France.svg/langfr-1280px-Ensign_of_France.svg.png" style={{width: 16, height: "auto"}} alt="France drapeau" />Lille
         </Code>.
+        Voici mon cv : {" "}
+        <a
+  href="/images/CV-alternance-DamienDiaz-juin24.pdf"
+  className="text-blue-500 hover:underline"
+  download
+>
+  Télécharger mon CV
+</a>
+       
     </p>
 </div>
 <div className="flex-1 flex justify-center items-center">
