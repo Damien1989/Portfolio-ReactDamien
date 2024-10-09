@@ -135,14 +135,14 @@ const SideProject = (props: SideProjectProps) => {
 
 const WORKS = [
     {
-    image: "https://media.licdn.com/dms/image/D4E0BAQGw4lcJvD8UHw/company-logo_100_100/0/1700308136673/hanapiz_logo?e=1720656000&v=beta&t=xtbN4uEEIefCCO_GyrSsQEQ9jDfWy9Ho5Y1RmIq7sTw",
+    image: "https://hanapiz.com/wp-content/uploads/2023/10/LOGO-VERT.png",
     title: "Hanapiz",
     role: "Dévelopeur Web Front-end stagiaire",
     date: "Janvier- Mars 2024",
     url: "https://hanapiz.com",
     },
     {
-    image: "https://media.licdn.com/dms/image/C4E0BAQGaOkmC-Y-i8g/company-logo_100_100/0/1630625409845/web_design_marchand_logo?e=1720656000&v=beta&t=EWM-zTI4B768XuBB7Vzd14RRgKqzbJzD1r5N0F6EaQQ",
+    image: "https://cdn.join.com/62b965fa2f4bcd000a9c84a9/web-design-marchand-logo-xl.png",
     title: "Web Design Marchand",
     role: "Développeur Back-end en alternance",
     date: "Février - juillet 2023",
