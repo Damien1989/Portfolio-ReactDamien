@@ -23,7 +23,7 @@ export const Hero = () => {
         </Code>
         {" "} afin <br /> de m'améliorer. Je vis à {" "}
         <Code className="inline-flex items-center gap-1">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%29.svg" style={{width: 16, height: "auto"}} alt="France drapeau" />Lille
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Ensign_of_France.svg/langfr-1280px-Ensign_of_France.svg.png" style={{width: 16, height: "auto"}} alt="France drapeau" />Lille
         </Code>.
     </p>
 </div>
