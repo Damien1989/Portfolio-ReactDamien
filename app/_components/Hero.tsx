@@ -26,15 +26,14 @@ export const Hero = () => {
         <Code className="inline-flex items-center gap-1">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Ensign_of_France.svg/langfr-1280px-Ensign_of_France.svg.png" style={{width: 16, height: "auto"}} alt="France drapeau" />Lille
         </Code>.
-        Voici mon cv : {" "}
+        Mon cv : {" "}
         <a
-  href="/images/CV-alternance-DamienDiaz-juin24.pdf"
+  href="/images/CV-alternance-DamienDIAZ-juin24.pdf"
   className="text-blue-500 hover:underline"
   download
 >
   Télécharger mon CV
 </a>
-       
     </p>
 </div>
 <div className="flex-1 flex justify-center items-center">
