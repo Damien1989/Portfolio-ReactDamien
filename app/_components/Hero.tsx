@@ -18,7 +18,6 @@ export const Hero = () => {
     <h3 className="text-3xl font-caption">Développeur web junior</h3>
     <p className="text-base">
         J'aime créer du contenu. Je suis des cours en ligne sur {" "}
-    
         <Code className="inline-flex items-center gap-1">
         Udemy
         </Code>
