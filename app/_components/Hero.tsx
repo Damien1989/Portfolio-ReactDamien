@@ -27,7 +27,7 @@ export const Hero = () => {
         </Code>.
         Mon cv : {" "}
         <a
-  href="/images/CV-alternance-DamienDIAZ-juin24.pdf"
+  href="/images/cv-damienDiaz-Alternance-12nov24.pdf"
   className="text-blue-500 hover:underline"
   download
 >
